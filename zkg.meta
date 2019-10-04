@@ -1,0 +1,4 @@
+[package]
+script_dir = scripts
+build_command = ./configure && make
+
