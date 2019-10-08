@@ -1,4 +1,4 @@
-## Zeek Plugin BACnet
+## Zeek Plugin ENIP
 
 When running as part of your Zeek installation this plugin will produce three log files containing metadata extracted from any Ethernet/IP (ENIP) and Common Industrial Protocol (CIP) traffic observed on UDP port 2222 and port 44818 TCP/UDP. Ethernet/IP and CIP are often observed together. `cip.log` and `enip.log` contain metadata from their respective protocols while `enip_list_identity.log` contains addtional data extracted from specific ENIP messages relating to device identity.
 
