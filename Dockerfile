@@ -1,5 +1,5 @@
 FROM      amazonlinux:latest
-MAINTAINER Peter den Hartog
+MAINTAINER https://github.com/amzn/
 
 # Metadata
 LABEL program=bro
