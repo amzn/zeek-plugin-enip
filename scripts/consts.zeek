@@ -3,30 +3,6 @@
 
 module ENIP;
 
-##0: 63 00 -> 0x0063 List Identity command
-##2: 40 00 -> 0x0040 Length
-##4: 00 00 00 00 -> Session Handle
-##8: 00 00 00 00 -> Success Status
-##12: 00 00 00 00 c1 de be d1 -> Sender Context
-##20: 00 00 00 00 -> Options
-##24: 01 00 -> 0x0001 Item count
-##26: 0c 00 -> 0x000c Identity Response
-##28: 3a 00 -> 0x003a Length
-##30: 10 00 -> 0x0010 Encapsulation Version
-##32: 00 02 -> socket family (2)
-##34: af 12 -> socket port (44818)
-##36: 0b c8 00 64 -> socket address (11.200.0.100)
-##40: 00 00 00 00 00 00 00 00 -> socket padding
-##48: 01 00 -> 0x0001 Vender ID (01) (From List)
-##50: 0e 00 -> 0x000e Device Type (14) (From List)
-##52: 6b 00 -> 0x006b Product Code (107)
-##54: 14 0d -> Revision (20.13)
-##56: 30 00 -> 0x0030 Status
-##58: be 9d 7c 60 -> 0x607c9dbe Serial Number
-##62: 18 -> Product Name Length
-##63: 31 37 36 39 2d 4c 33 33 45 52 2f 41 20 4c 4f 47 49 58 35 33 33 33 45 52 -> 1769-L33ER/A LOGIX5333ER
-##87: 0x03 -> state
-
 export {
     ## ENIP default commands
     const commands = {
