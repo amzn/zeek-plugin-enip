@@ -1,11 +1,12 @@
-## Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-## SPDX-License-Identifier: BSD-3-Clause
+##! Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+##! SPDX-License-Identifier: BSD-3-Clause
 
 ##! Implements base functionality for EtherNet/IP analysis.
 ##! Generates the enip.log file, containing some information about the ENIP headers.
 ##! Generates the enip_list_identity.log file, containing some information about the ENIP list identity.
 ##! Implements base functionality for CIP analysis.
 ##! Generates the cip.log file, containing some information about the CIP headers.
+##! Note: Log_Debug (enip_cip_debug) was deprecated, but it could be re-enabled if you modify the enip-analyzer.pac
 
 module ENIP;
 
