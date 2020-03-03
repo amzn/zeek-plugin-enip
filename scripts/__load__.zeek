@@ -1,4 +1,4 @@
 @load ./consts
 @load ./main
-@load ./detect_msf.bro
+@load ./detect_msf
 

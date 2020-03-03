@@ -1,4 +1,5 @@
 #include "Plugin.h"
+#include "analyzer/Component.h"
 
 namespace plugin { 
     namespace Zeek_ENIP {

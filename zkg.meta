@@ -3,4 +3,6 @@ script_dir = scripts
 build_command = ./configure && make
 tags = zeek plugin, protocol analyzer, log writer, ics, enip, cip
 description = Plugin that enables parsing of the Ethernet/IP and Common Industrial Protocol standards
-
+depends =
+  zkg >=2.0
+  zeek >=3.0.0
