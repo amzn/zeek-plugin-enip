@@ -6,8 +6,8 @@
     %}
 
 analyzer ENIP withcontext {
-    connection:    ENIP_Conn;
-    flow:        ENIP_Flow;
+    connection: ENIP_Conn;
+    flow:       ENIP_Flow;
     };
 
 %include enip-protocol.pac
