@@ -8,7 +8,7 @@ When running as part of your Zeek installation this plugin will produce three lo
 
 ## Sharing and Contributing
 
-This code is made available under the [BSD-3-Clause license](LICENSE). [Guidelines for contributing](CONTRIBUTING.md) are available as well as a [pull request template](.github/PULL_REQUEST_TEMPLATE.md). A [Dockerfile](Dockerfile) has been included in the repository to assist with setting up an environment for testing any changes to the plugin.
+This code is made available under the [BSD-3-Clause license](https://github.com/amzn/zeek-plugin-enip/blob/master/LICENSE). [Guidelines for contributing](https://github.com/amzn/zeek-plugin-enip/blob/master/CONTRIBUTING.md) are available as well as a [pull request template](https://github.com/amzn/zeek-plugin-enip/blob/master/.github/PULL_REQUEST_TEMPLATE.md). A [Dockerfile](https://github.com/amzn/zeek-plugin-enip/blob/master/Dockerfile) has been included in the repository to assist with setting up an environment for testing any changes to the plugin.
 
 ## Acknowledgements
 

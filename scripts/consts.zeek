@@ -24,7 +24,7 @@ export {
         [0x01] = "Connection Failure",
         [0x02] = "Resource Unavailable",
         [0x03] = "Invalid Parameter Value",
-        [0x04] = "Path Size Invalid",
+        [0x04] = "Path Segment Error",
         [0x05] = "Path Destination Unknown",
         [0x06] = "Partial Transfer",
         [0x07] = "Connection Lost",

@@ -14,6 +14,6 @@ plugin::Configuration Plugin::Configure() {
     
     plugin::Configuration config;
     config.name = "Zeek::ENIP";
-    config.description = "EtherNet/IP and CIP Protocol analyzer";
+    config.description = "EtherNet/IP and CIP protocols analyzer";
     return config;
     }
