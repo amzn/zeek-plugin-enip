@@ -1,5 +1,5 @@
 [package]
-script_dir = scripts
+script_dir = scripts/ENIP
 build_command = ./configure && make
 tags = zeek plugin, protocol analyzer, log writer, ics, enip, cip
 description = Plugin that enables parsing of the Ethernet/IP and Common Industrial Protocol standards
