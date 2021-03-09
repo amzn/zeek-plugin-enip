@@ -13,3 +13,8 @@ This code is made available under the [BSD-3-Clause license](https://github.com/
 ## Acknowledgements
 
 * [Earlier work](https://github.com/scy-phy/bro-cip-enip) on CIP and ENIP by [SCy-Phy](http://scy-phy.github.io/)
+
+## Related Work
+
+* [ICSNPP-ENIP](https://github.com/cisagov/icsnpp-enip) - Another ENIP/CIP plugin implementation for Zeek
+
