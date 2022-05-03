@@ -33,6 +33,8 @@ export {
         };
     ## Event that can be handled to access the enip record as it is sent to the logging framework.
     global log_enip: event(rec: ENIP);
+
+    global log_policy: Log::PolicyHook;
     
     ## list identity info
     type ENIP_List_Identity: record {
@@ -53,6 +55,8 @@ export {
     ## Event that can be handled to access the enip record as it is sent to the logging framework.
     global log_enip_list_identity: event(rec: ENIP_List_Identity);
 
+    global log_policy_list_identity: Log::PolicyHook;
+
     type CIP: record {
         ts          : time &log;                ## Timestamp for when the event happened.
         uid         : string &log;              ## Unique ID for the connection.
@@ -70,6 +74,8 @@ export {
     ## Event that can be handled to access the enip record as it is sent to the logging framework.
     global log_cip: event(rec: CIP);
 
+    global log_policy_cip: Log::PolicyHook;
+
     type Debug: record {
         ts      : time &log;                ## Timestamp for when the event happened.
         uid     : string &log;              ## Unique ID for the connection.
@@ -80,6 +86,8 @@ export {
 
     ## Event that can be handled to access the enip record as it is sent to the logging framework.
     global log_debug: event(rec: Debug);
+
+    global log_policy_debug: Log::PolicyHook;
     }
 
 redef record connection += {
@@ -101,19 +109,23 @@ event zeek_init() &priority=5 {
     Log::create_stream(ENIP::Log_ENIP,
                         [$columns=ENIP,
                         $ev=log_enip,
-                        $path="enip"]);
+                        $path="enip",
+                        $policy=log_policy]);
     Log::create_stream(ENIP::Log_ENIP_List_Identity,
                         [$columns=ENIP_List_Identity,
                         $ev=log_enip_list_identity,
-                        $path="enip_list_identity"]);
+                        $path="enip_list_identity",
+                        $policy=log_policy_list_identity]);
     Log::create_stream(ENIP::Log_CIP,
                         [$columns=CIP,
                         $ev=log_cip,
-                        $path="cip"]);
+                        $path="cip",
+                        $policy=log_policy_cip]);
     Log::create_stream(ENIP::Log_Debug,
                         [$columns=Debug,
                         $ev=log_debug,
-                        $path="debug"]);
+                        $path="enip_debug",
+                        $policy=log_policy_debug]);
     Analyzer::register_for_ports(Analyzer::ANALYZER_ENIP, ports);
     }
 
